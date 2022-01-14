@@ -35,7 +35,7 @@ for i in range(1000):
     #print(lotto[0]~[5])
     for num in lotto:
         # print(num)
-        # lotto가 가지고 있는 값들 하나하나다
+        # lotto가 가지고 있는 값들 하나하나가
         # winners 안에 들어있다면,
         if num in winners:
         # 한개 당첨    
