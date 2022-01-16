@@ -21,7 +21,60 @@
 
 #구구단 코드 작성
 
-dan = int(input("숫자 입력: "))
-list = [1, 2, 3, 4 , 5, 6, 7, 8, 9]
-for i in list:
-    print("{0} * {1} = {2}" .format(dan, i, dan * i))
+# dan = int(input("숫자 입력: "))
+# list = [1, 2, 3, 4 , 5, 6, 7, 8, 9]
+# for i in list:
+#     print("{0} * {1} = {2}" .format(dan, i, dan * i))
+
+#인치(inch)를 센티미터(cm)으로 변환하는 프로그램을 작성하십시오.
+#이 때 1 인치는 2.54 센티미터입니다.
+
+# num = int(input())
+# num2 = num * 2.54
+# print(f'{num} inch => {num2} cm')
+
+# num = int(input())
+# num2 = num * 2.54
+# print('{%.2f} inch => {%.2f} cm'.format(num,num2))
+
+# a = int(input())
+# for i in range(1, a+1):
+#     if a%i == 0:
+#         print(f'{i}(은)는 {a}의 약수입니다.')
+
+# a = int(input())
+# count = 0
+# for i in range(1, a+1):
+#     if a%i == 0:
+#         print(f'{i}(은)는 {a}의 약수입니다.')
+#         count += 1
+        
+# if count == 2:
+#     print(f'{a}(은)는 1과 {a}로만 나눌 수 있는 소수입니다.')
+
+# a=int(input())
+# count = 0
+# for i in range(1,a+1):
+#    if not (a % i) :
+#           print("%d(은)는 %d의 약수입니다." % (i, a))
+#           count += 1
+# if count == 2:
+#    print("%d(은)는 1과 %d로만 나눌 수 있는 소수입니다." % (a, a))
+
+# a = int(input())
+# count = 0
+# for i in range(1, a+1):
+#     if a%i == 0:
+#         print(f'{i}(은)는 {a}의 약수입니다.')
+#         count += 1
+# if count == 2:
+#     print(f'{a}(은)는 1과 {a}로만 나눌 수 있습니다.')
+
+a = [88, 30, 61, 55, 95]
+count = 1
+for i in a:
+    if i >= 60:
+        print(f'{count}번 학생의 점수는 {i}점으로, 합격입니다.')
+    else:
+        print(f'{count}번 학생의 점수는 {i}점으로, 불합격입니다.')
+    count += 1
