@@ -118,8 +118,190 @@
 # for i in range(a, -1, -1):
 # 	print(i)
 
-a = int(input())
-ans = 0
-for i in range(a + 1):
-	ans = ans + i
-print(ans)
+# a = int(input())
+# ans = 0
+# for i in range(a + 1):
+# 	ans = ans + i
+# print(ans)
+
+# a = range(1, 51)
+# l_ist = []
+# for i in a:
+# 	if i % 2 == 1:
+# 		l_ist.append(i)
+# 	else:
+# 		continue
+# print(l_ist)
+
+# n = 5
+# m = 9
+# ga_ro = '*' * n
+# for i in range(m):
+# 	print(ga_ro)
+
+# scores = [80, 89, 99, 83]
+# ans = 0
+# for i in scores:
+# 	ans = ans + i
+
+# ave = ans / len(scores)
+# print(ave)
+
+# N = int(input())
+# for i in range(1, N + 1):
+# 	if N%i == 0:
+# 		print(i)
+# 	else:
+# 		continue
+
+# numbers = [
+# 	85, 72, 38, 80, 69, 65, 68, 96, 22, 49, 67, 
+# 	51, 61, 63, 87, 66, 24, 80, 83, 71, 60, 64, 
+# 	52, 90, 60, 49, 31, 23, 99, 94, 11, 25, 24
+# ]
+# numbers.sort()
+
+# a = len(numbers)
+
+# if a%2 == 0:
+# 	print('중간값 없음')
+# else:
+# 	print(numbers[a//2])
+
+# a = int(input())
+# for i in range(1, a+1):
+# 	for k in range(1, i+1):
+# 		print(k, end='')
+# 	print()
+
+# numbers = [
+# 	85, 72, 38, 80, 69, 65, 68, 96, 22, 49, 67, 
+# 	51, 61, 63, 87, 66, 24, 80, 83, 71, 60, 64, 
+# 	52, 90, 60, 49, 31, 23, 99, 94, 11, 25, 24
+# ]
+# numbers.sort()
+
+# a = len(numbers)
+
+# if a%2 == 0:
+# 	print('중간값 없음')
+# else:
+# 	print(numbers[a//2])
+
+# a = int(input())
+# for i in range(1, a+1):
+# 	for k in range(1, i+1):
+# 		print(k, end=' ')
+# 	print()
+
+#득표수 구하기, practice 1.2 문제
+# students = ['이영희', '김철수', '이영희', '조민지', '김철수', '조민지', '이영희', '이영희']
+# count = 0
+# for i in students:
+# 	if i == '이영희':
+# 		count += 1
+# print(count)
+
+#최댓값 구하기, practice 1.3 문제
+# numbers = [7, 10, 22, 4, 3, 17]
+# numbers.sort()
+# print(numbers[-1])
+
+#최솟값 구하기, practice 1.4 문제
+# numbers = [7, 10, 22, 4, 3, 17]
+# numbers.sort()
+# print(numbers[0])
+
+#최댓값과 등장 횟수 구하기, practice 1.5 문제
+# numbers = [7, 10, 22, 7, 22, 22]
+# numbers.sort()
+# a = numbers[-1]
+# count = 0
+# for i in numbers:
+# 	if i == a:
+# 		count += 1
+# print(a, count)
+
+#5의 개수 구하기, practice 1.6 문제
+# numbers = [7, 17, 10, 5, 4, 3, 17, 5, 2, 5]
+# count = 0
+# for i in numbers:
+# 	if i == 5:
+# 		count += 1
+# print(count)
+
+#'a'가 싫어, practice 1.7 문제
+# word = input()
+# output = ''
+# for i in range(len(word)):
+# 	wo_rd = word[i]
+# 	if wo_rd != 'a':
+# 		output += wo_rd
+# print(output)
+
+#단어 뒤집기, practice 1.8 문제
+# word = input()
+# word_length = len(word)
+# output = ""
+# for i in range(word_length):
+# 	char = word[word_length-1-i]
+# 	output += char
+# print(output)
+
+#단어 뒤집기 다시 해보기
+# word = input()
+# reverse_word = ''
+# for i in range(len(word)):
+# 	re_v = word[len(word) -1 -i]
+# 	reverse_word += re_v
+# print(reverse_word)
+
+# word = input()
+# result = ''
+# for char in word:
+#     if char != 'a':
+#         result += char
+# print(result)
+
+# word = input()
+# result = ''
+# for char in word:
+#     if char == 'a':
+#         continue #char이 'a'이면 그냥 넘겨버려
+#     else:
+#         result += char #char이 'a'가 아닌 상황이니, char을 result에 더한 후 대입ㄱ
+# print(result)
+
+# n까지의 총합
+# 1. for문 사용
+# num = int(input())
+# su_m = 0
+# for i in range(1, num+1):
+#     su_m += i
+# print(su_m)
+
+# 2. while문 사용
+# num = int(input())
+# su_m = 0
+# i = 0
+# while i <= num:
+#     su_m += i
+#     i = i + 1
+# print(su_m)
+
+# 리스트의 총 곱
+# 1. for문 사용
+# num = int(input())
+# gophagi = 1
+# for i in range(1, num + 1):
+#     gophagi = gophagi * i
+# print(gophagi)
+
+# 2. while문 사용
+# num = int(input())
+# gophagi = 1
+# i = 1
+# while i <= num:
+#     gophagi = gophagi * i
+#     i += 1
+# print(gophagi)
