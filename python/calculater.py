@@ -305,3 +305,21 @@
 #     gophagi = gophagi * i
 #     i += 1
 # print(gophagi)
+
+# 함수의 선언 실습
+# 세제곱 반환 함수
+# input, output 설정 고민
+# cube(2), cube(7)과 같음 식으로 호출될 것.
+# def cube(number):
+#     return number ** 3
+
+# print(cube(2))
+
+# 함수 실습문제 - 사각형 넓이
+# 너비와 높이를 입력, 넓이와 둘레를 튜플로 반환하라
+
+def rectangle(width, height):
+    return width * height, (width + height) * 2
+
+print(rectangle(50, 45))
+# 하나의 튜플값으로 결과가 나옴
