@@ -318,8 +318,94 @@
 # 함수 실습문제 - 사각형 넓이
 # 너비와 높이를 입력, 넓이와 둘레를 튜플로 반환하라
 
-def rectangle(width, height):
-    return width * height, (width + height) * 2
+# def rectangle(width, height):
+#     return width * height, (width + height) * 2
 
-print(rectangle(50, 45))
+# print(rectangle(50, 45))
 # 하나의 튜플값으로 결과가 나옴
+
+# def add(*args, a):
+#     return args, a
+# print(add(1, 2, 3, 4))
+#args가 1, 2, 3, 4를 다 들고가서 a에대한 값은 X. 에러남
+
+# 함수 연습
+# a, b = 4, 9
+# def func1(a, b):
+#     return a * b
+#     print(func1(5, 8))
+# func1()
+
+
+# def get_middle_char(string):
+#     if len(string) % 2:
+#         return string[len(string)//2]
+#     else:
+#         return string[len(string//2)-1, len(string//2)]
+
+# def func(a):
+#     return a*2
+
+# result = func(2)
+# print(result)
+
+# def func(string):
+#     if len(string) % 2:
+#         return string[len(string)//2]
+#     else:
+#         a = string[len(string)//2-1]
+#         b = string[len(string)//2]
+#         return a, b
+
+# result = func('elelkele')
+# print(result)
+
+# def func(word):
+#     return word[1], word[2]
+# result = func('elel')
+# print(result)
+
+# def my_func(a, b):
+#     c = a + b
+#     print(c)
+    
+# result = my_func(3, 7)
+# print(result)
+
+# def my_avg(*num):
+#     su_m = 0
+#     for i in num:
+#         su_m += i
+#     return su_m/len(num)
+
+# result = my_avg(77, 83, 95, 80, 70)
+# print(result)
+
+def ssafy(name, location='서울'):
+    print(f'{name}의 지역은 {location}입니다.')
+    
+# 모든 케이스 정리
+#1.
+ssafy('가나')
+# 위의 경우 name에 '가나', location엔 디폴트인 '서울'이 들어감. 옳은 코드
+
+#2.
+ssafy('다라', '부산')
+# 위의 경우 name에 '다라', location에 '부산'이 들어감. 옳은 코드
+# 컴퓨터가 '다라'와 '부산'의 순서가 각각 name과 location이라는 것을 알기 때문에, 들어갈 수 있음
+
+#3.
+ssafy('거너', location = '부산')
+# 위의 경우 keyword argument가 뒤로 가있으므로 잘 돌아감. 옳은 코드
+
+#4.
+ssafy(name = '마바')
+# 위의 경우 name에 '마바'가 지정되어 잘 들어감. 옳은 코드
+
+#5.
+# ssafy(name = '사아', '부산')
+# 위의 경우 'keyword argument가 positional argument보다 앞에 있으므로' 안 돌아감. 잘못된 코드
+
+#6.
+ssafy(name = '자차', location = '부산')
+# 위의 경우 둘 다 keyword argument라 잘 돌아감. 옳은 코드
